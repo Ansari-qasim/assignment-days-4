@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sample Structured Web Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #f0f0f0;
+      color: #212121;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #1a237e;
+      color: white;
+      padding: 20px;
+      border-radius: 8px 8px 0 0;
+    }
+
+    header h1 {
+      margin-top: 0;
+    }
+
+    section {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #e65100;
+    }
+
+    .form-input {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #212121;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #555;
+      border-radius: 5px;
+      background-color: #fff;
+      color: #212121;
+    }
+
+    button {
+      background-color: #2962ff;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #0039cb;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    .data-table th, .data-table td {
+      border: 1px solid #888;
+      padding: 12px;
+    }
+
+    .data-table th {
+      background-color: #004d40;
+      color: white;
+    }
+
+    .data-table tr:nth-child(even) {
+      background-color: #e0f2f1;
+    }
+
+    iframe {
+      border: 3px solid #1a237e;
+      border-radius: 6px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #212121;
+      color: white;
+      margin-top: 40px;
+      border-radius: 0 0 8px 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Welcome to the Demo Web Page</h1>
+      <p>This page demonstrates tables, forms, iframes, and class usage in HTML.</p>
+    </header>
+
+    <!-- Form Section -->
+    <section class="form-section">
+      <h2>Contact Form</h2>
+      <form action="#" method="post">
+        <div class="form-input">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-input">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-input">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+        </div>
+        <div class="form-input">
+          <label for="topic">Topic:</label>
+          <select id="topic" name="topic">
+            <option value="general">General Inquiry</option>
+            <option value="support">Support</option>
+            <option value="feedback">Feedback</option>
+          </select>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Table Section -->
+    <section class="table-section">
+      <h2>Employee Table</h2>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alice Johnson</td>
+            <td>Marketing</td>
+            <td>Manager</td>
+          </tr>
+          <tr>
+            <td>Bob Smith</td>
+            <td>Engineering</td>
+            <td>Developer</td>
+          </tr>
+          <tr>
+            <td>Carol White</td>
+            <td>HR</td>
+            <td>Recruiter</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Iframe Section -->
+    <section class="iframe-section">
+      <h2>Embedded Content</h2>
+      <p>Below is an embedded Google Map using an iframe:</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0191857834014!2d-122.42067968468116!3d37.77851997975827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064a4f6a3eb%3A0x8d65bdb03b878ed0!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1594243376376!5m2!1sen!2sus"
+        width="100%"
+        height="300"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Example Web Page. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
